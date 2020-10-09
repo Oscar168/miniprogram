@@ -1,0 +1,13 @@
+<!--index.wxml-->
+<view class="box">
+  <view class="navinfo">
+    <!-- 利用 wx:for进行数组的循环遍历;通过wx:for-index="index" data-index="{{index}}"寻找下标-->
+    <view wx:for-items="{{array}}" wx:for-index="index" data-index="{{index}}" bindtap="tapname"
+      class="item {{index==ind?'active':''}}">
+      {{item}}
+    </view>
+  </view>
+  <view class="content">
+    <view>{{info}}</view>
+  </view>
+</view>

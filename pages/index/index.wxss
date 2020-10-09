@@ -1,0 +1,20 @@
+/**index.wxss**/
+.box{
+  display: flex;
+  flex-direction: column;
+}
+.navinfo {
+  display: flex;
+  height:40rpx;
+}
+.content{
+  flex:1;
+  text-align: center;
+}
+.navinfo .item {
+  flex:1;
+  text-align: center;
+}
+.navinfo .active{
+  background:red;
+}
